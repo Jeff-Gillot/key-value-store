@@ -1,0 +1,52 @@
+### Create new test store
+POST http://localhost:5000/data/test
+Authorization: my-secret
+
+### Delete test store
+DELETE http://localhost:5000/data/test
+Authorization: my-secret
+
+### Add tony
+PUT http://localhost:5000/api/store3/serviceUrl
+Content-Type: text/plain
+#Authorization: my-secret
+
+http://localhost:5000
+
+### Add lisa
+PUT http://localhost:5000/data/test/lisa
+Content-Type: text/plain
+Authorization: my-secret
+
+Lisa
+
+### Get name
+
+GET http://localhost:5000/data/test/tony
+Content-Type: application/json
+Authorization: my-secret
+
+### Get store content
+
+GET http://localhost:5000/data/test
+Accept: application/json
+Authorization: my-secret
+
+### Delete name
+
+DELETE http://localhost:5000/data/test/tony
+Authorization: my-secret
+
+### Add file
+POST http://localhost:5000/data/test/gradle.bat
+Authorization: my-secret
+
+< ../../gradlew.bat
+
+### Delete file
+DELETE http://localhost:5000/data/test/gradle.bat
+Authorization: my-secret
+
+### get file
+GET http://localhost:5000/data/test/gradle.bat
+Authorization: my-secret
